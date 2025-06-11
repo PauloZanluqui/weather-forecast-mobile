@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import { format } from "date-fns";
 import { Weather } from "../../models/WeatherModel";
 import { api } from "../../lib/axios";

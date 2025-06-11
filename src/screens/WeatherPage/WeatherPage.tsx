@@ -82,11 +82,8 @@ export function WeatherPage() {
 
             {cityWeatherData && <WeatherCard weather={cityWeatherData} refreshCard={refreshCardSearch} />}
 
-
             <Text style={styles.favoriteCitiesTitle}>Cidades Favoritas:</Text>
-            {favoriteCitiesData.map((city) => (
-                <WeatherCard key={city.location.lat} weather={city} refreshCard={getFavoriteCities} />
-            ))}
+            {isLoading ? <Text>Carregando cidades favoritas...</Text> : favoriteCitiesData.length === 0 ? <Text>Nenhuma cidade favorita encontrada.</Text> : favoriteCitiesData.map((city) => <WeatherCard key={city.location.name} weather={city} refreshCard={getFavoriteCities} />)}
         </View>
     );
 }

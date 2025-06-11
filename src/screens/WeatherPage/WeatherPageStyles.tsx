@@ -11,29 +11,28 @@ export const styles = StyleSheet.create({
         fontWeight: "bold",
         marginVertical: 10,
     },
-
     formSearch: {
-        flexDirection: 'row',
+        flexDirection: "row",
         margin: 10,
-      },
-      inputSearch: {
+    },
+    inputSearch: {
         flex: 1,
         borderWidth: 1,
-        borderColor: '#ccc',
+        borderColor: "#ccc",
         paddingHorizontal: 12,
         paddingVertical: 8,
         borderRadius: 8,
         marginRight: 8,
-        backgroundColor: '#fff',
-      },
-      buttonSearch: {
-        backgroundColor: '#4f46e5',
+        backgroundColor: "#fff",
+    },
+    buttonSearch: {
+        backgroundColor: "#4f46e5",
         paddingHorizontal: 16,
-        justifyContent: 'center',
+        justifyContent: "center",
         borderRadius: 8,
-      },
-      buttonText: {
-        color: '#fff',
-        fontWeight: '600',
-      },
+    },
+    buttonText: {
+        color: "#fff",
+        fontWeight: "600",
+    },
 });
